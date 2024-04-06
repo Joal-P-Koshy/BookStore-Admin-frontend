@@ -1,1 +1,36 @@
-<p>dashboard works!</p>
+<section id="dashboard" class="">
+    <div class="d-flex">
+
+        <div class="p-5 w-100">
+            <div class="d-flex justify-content-between">
+                <h3 class="">Book List</h3>
+                <a routerLink="/student/add" style="text-decoration: none; color: black;"
+                    class="btn btn-outline-secondary p-2" routerLink="/addbook"><i class="fa-solid fa-user-plus me-2"></i> Add Book</a>
+            </div>
+
+            <div class="d-flex justify-content-center align-items-center flex-column mt-5">
+
+                <table class="table table-bordered table-striped border-secondary shadow mt-5">
+                    <thead>
+                        <tr class="text-center">
+                            <th> Id</th>
+                            <th>Book Name</th>
+                            <th>Author</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr class="text-center">
+                            <td>id</td>
+                            <td>Ram</td>
+                            <td>Test</td>
+                            <td>₹ 300</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>

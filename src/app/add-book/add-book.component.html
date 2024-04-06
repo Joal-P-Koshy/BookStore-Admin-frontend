@@ -1,0 +1,40 @@
+<section id="Book-add" class="">
+    <div class="d-flex mt-5">
+        
+        <div class="d-flex justify-content-center align-items-center flex-column w-100">
+            <h3 class="">Add New Book Details</h3>
+            <form class="border rounded shadow p-5 w-50 d-flex flex-column gap-3">
+                <div class="">
+                    <input 
+                    [(ngModel)]="book.id" name="bookId"
+                    type="text" placeholder="Book Id" class="form-control">
+                </div>
+                <div class="">
+                    <input
+                    [(ngModel)]="book.bookName" name="bookName"
+                    type="text" placeholder="Book Name" class="form-control">
+                </div>
+                <div class="">
+                    <input 
+                    [(ngModel)]="book.author" name="bookAuthor"
+                    type="text" placeholder="Book Author" class="form-control">
+                </div>
+                <div class="">
+                    <input 
+                    [(ngModel)]="book.price" name="bookPrice"
+                    type="text" placeholder="Book Price" class="form-control">
+                </div>
+                <div class="">
+                    <input 
+                    [(ngModel)]="book.coverImg" name="bookimg"
+                    type="text" placeholder="Book Image" class="form-control">
+                </div>
+                
+                <div class="d-flex gap-3">
+                    <button class="btn btn-warning" (click)="clearField()">Clear</button>
+                    <button class="btn btn-success" (click)="addBook()">Add</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
