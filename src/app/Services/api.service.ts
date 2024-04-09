@@ -21,4 +21,16 @@ export class ApiService {
     return this.http.post(`${this.server_url}/addbook`, data);
   }
 
+
+  // get all books
+  getAllBooksApi() {
+    return this.http.get(`${this.server_url}/listbooks`);
+  }
+
+
+  // delete books
+  deleteBookApi(id: any) {
+    return this.http.delete(`${this.server_url}/deletebook/${id}`);
+  }
+
 }

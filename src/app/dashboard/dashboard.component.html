@@ -17,16 +17,22 @@
                             <th>Book Name</th>
                             <th>Author</th>
                             <th>Price</th>
+                            <th>Cover Image</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
 
                     <tbody>
 
-                        <tr class="text-center">
-                            <td>id</td>
-                            <td>Ram</td>
-                            <td>Test</td>
-                            <td>₹ 300</td>
+                        <tr class="text-center" style="vertical-align: middle;" *ngFor="let book of allBooks">
+                            <td>{{book.id}}</td>
+                            <td>{{book.bookName}}</td>
+                            <td>{{book.author}}</td>
+                            <td>₹ {{book.price}}</td>
+                            <td> <img src={{book.coverImg}} height="150px" width="100px" alt=""> </td>
+                            <td><a class="btn btn-outline-danger" (click)="deleteBook(book._id)">
+                                <i class="fa-solid fa-trash"></i>
+                            </a></td>
                         </tr>
                     </tbody>
                 </table>
